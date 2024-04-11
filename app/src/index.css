@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+.light {
+  --bg-img: url(./images/bg-desktop-light.jpg);
+  --bg-img-mobile: url(./images/bg-mobile-light.jpg);
+  --main-bg: hsl(0, 0%, 98%);
+  --todo-bg: white;
+  --main-text: hsl(235, 19%, 35%);
+  --input-text: #393a4b;
+  --placeholder-text: hsl(236, 9%, 61%);
+  --secondary-text: hsl(236, 9%, 61%);
+  --crossed-text: hsl(233, 11%, 84%);
+  --hover: hsl(235, 19%, 35%);
+  --line-color: #e3e4f1;
+}
+
+.dark {
+  --bg-img: url(./images/bg-desktop-dark.jpg);
+  --bg-img-mobile: url(./images/bg-mobile-dark.jpg);
+  --main-bg: hsl(235, 21%, 11%);
+  --todo-bg: hsl(235, 24%, 19%);
+  --main-text: hsl(234, 39%, 85%);
+  --input-text: hsl(234, 39%, 85%);
+  --placeholder-text: #767992;
+  --secondary-text: #5b5e7e;
+  --crossed-text: #4d5067;
+  --hover: hsl(236, 33%, 92%);
+  --line-color: #393a4b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: var(--bg-img);
+  background-repeat: no-repeat;
+  background-color: var(--main-bg);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+@media (max-width: 400px) {
+  body {
+    background-image: var(--bg-img-mobile);
+    background-size: contain;
+  }
+}
+
+#root {
+  width: 87%;
+  max-width: 33.75rem;
+}
